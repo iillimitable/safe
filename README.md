@@ -305,6 +305,28 @@ Scores are averaged across all reports for an area and mapped to:
 | 0 – 19 | ⛔ Very Unsafe |
 
 ---
+## 📸 Visual Assets
+
+### Registration Form
+![Welcome Screen](https://dummyimage.com/1200x700/cccccc/000000&text=Welcome+Screen)
+
+### Login Form
+![Welcome Screen](https://dummyimage.com/1200x700/cccccc/000000&text=Welcome+Screen)
+
+### Welcome Screen
+![Welcome Screen](https://dummyimage.com/1200x700/cccccc/000000&text=Welcome+Screen)
+
+### Incident Map
+![Incident Map](https://dummyimage.com/1200x700/cccccc/000000&text=Incident+Map)
+
+### Report Incident 
+![Incident Map](https://github.com/iillimitable/safe/blob/14b083487d7c89a9f9e008f79b30af28c3c8b506/visual-assets/Screenshot%202026-04-19%20222809.png)
+
+### Analytics & Charts
+![Analytics](https://dummyimage.com/1200x700/cccccc/000000&text=Analytics)
+
+### Admin Panel
+![Admin Panel](https://dummyimage.com/1200x700/cccccc/000000&text=Admin+Panel)
 
 
 ## 🤝 Contributing
