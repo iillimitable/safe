@@ -329,7 +329,7 @@ Scores are averaged across all reports for an area and mapped to:
 ![Welcome Screen](https://github.com/iillimitable/safe/blob/586fde443ce54afe4468589466e15729a2644027/visual-assets/Screenshot%202026-06-23%20103737.png)
 
 ### Incident's
-![Incident Map]([https://dummyimage.com/1200x700/cccccc/000000&text=Incident+Map](https://github.com/iillimitable/safe/blob/586fde443ce54afe4468589466e15729a2644027/visual-assets/Screenshot%202026-06-23%20103906.png))
+![Incident Map](https://github.com/iillimitable/safe/blob/2c7077495dbe117493acd44b4f441c6c60009be8/visual-assets/Screenshot%202026-06-23%20103906.png)
 
 ### Report Incident 
 ![Incident Map](https://github.com/iillimitable/safe/blob/14b083487d7c89a9f9e008f79b30af28c3c8b506/visual-assets/Screenshot%202026-04-19%20222809.png)
