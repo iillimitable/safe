@@ -20,7 +20,7 @@
 **Safe Map** is a full-stack web application that lets citizens report safety conditions in their area using a structured questionnaire. The data is aggregated and visualized as a **Safety Score** — helping people make informed decisions about where they live, work, or travel.
 
 Key highlights:
-- 🌐 Supports **15 Indian languages** on the welcome screen
+- 🌐 **15 Indian languages** on the welcome screen
 - 📊 Real-time **safety score calculation** based on community reports
 - 🗺️ **Incident mapping** with Leaflet interactive maps
 - 🔐 Secure **JWT authentication** with role-based access
@@ -306,13 +306,6 @@ Scores are averaged across all reports for an area and mapped to:
 
 ---
 
-## 🌍 Multilingual Support
-
-The welcome screen cycles through greetings in **15 languages**:
-
-English, Hindi, Bengali, Gujarati, Kannada, Malayalam, Tamil, Telugu, Punjabi, Odia, Urdu, Manipuri, Sindhi, Santali, and Namaste 🙏
-
----
 
 ## 🤝 Contributing
 
