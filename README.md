@@ -305,29 +305,6 @@ Scores are averaged across all reports for an area and mapped to:
 | 0 – 19 | ⛔ Very Unsafe |
 
 ---
-## 📸 Visual Assets
-
-### Registration Form
-![Welcome Screen](https://dummyimage.com/1200x700/cccccc/000000&text=Welcome+Screen)
-
-### Login Form
-![Welcome Screen](https://dummyimage.com/1200x700/cccccc/000000&text=Welcome+Screen)
-
-### Welcome Screen
-![Welcome Screen](https://dummyimage.com/1200x700/cccccc/000000&text=Welcome+Screen)
-
-### Incident Map
-![Incident Map](https://dummyimage.com/1200x700/cccccc/000000&text=Incident+Map)
-
-### Report Incident 
-![Incident Map](https://github.com/iillimitable/safe/blob/14b083487d7c89a9f9e008f79b30af28c3c8b506/visual-assets/Screenshot%202026-04-19%20222809.png)
-
-### Analytics & Charts
-![Analytics](https://dummyimage.com/1200x700/cccccc/000000&text=Analytics)
-
-### Admin Panel
-![Admin Panel](https://dummyimage.com/1200x700/cccccc/000000&text=Admin+Panel)
-
 
 ## 🤝 Contributing
 
@@ -339,11 +316,50 @@ Scores are averaged across all reports for an area and mapped to:
 
 ---
 
+
+## 📸 Visual Assets
+
+### Registration Form
+![Welcome Screen](https://github.com/iillimitable/safe/blob/586fde443ce54afe4468589466e15729a2644027/visual-assets/Screenshot%202026-06-23%20103618.png)
+
+### Login Form
+![Welcome Screen](https://github.com/iillimitable/safe/blob/586fde443ce54afe4468589466e15729a2644027/visual-assets/Screenshot%202026-06-23%20103713.png)
+
+### Welcome Screen
+![Welcome Screen](https://github.com/iillimitable/safe/blob/586fde443ce54afe4468589466e15729a2644027/visual-assets/Screenshot%202026-06-23%20103737.png)
+
+### Incident's
+![Incident Map]([https://dummyimage.com/1200x700/cccccc/000000&text=Incident+Map](https://github.com/iillimitable/safe/blob/586fde443ce54afe4468589466e15729a2644027/visual-assets/Screenshot%202026-06-23%20103906.png))
+
+### Report Incident 
+![Incident Map](https://github.com/iillimitable/safe/blob/14b083487d7c89a9f9e008f79b30af28c3c8b506/visual-assets/Screenshot%202026-04-19%20222809.png)
+
+### Analytics & Charts
+![Analytics](https://github.com/iillimitable/safe/blob/586fde443ce54afe4468589466e15729a2644027/visual-assets/Screenshot%202026-06-23%20103941.png)
+
+### Admin Panel
+
+### Dashboard
+![Admin Panel/Dashboard](https://github.com/iillimitable/safe/blob/0266866448e5eac1ed372b227a27dd1ed9b6cfd1/visual-assets/Screenshot%202026-06-23%20111428.png)
+
+### Users
+![Admin Panel/Users](https://github.com/iillimitable/safe/blob/0266866448e5eac1ed372b227a27dd1ed9b6cfd1/visual-assets/Screenshot%202026-06-23%20111438.png)
+
+### Incident's
+![Admin Panel/Incident's](https://github.com/iillimitable/safe/blob/0266866448e5eac1ed372b227a27dd1ed9b6cfd1/visual-assets/Screenshot%202026-06-23%20111513.png)
+
+### Safety reports
+![Admin Panel/Safety reports](https://github.com/iillimitable/safe/blob/0266866448e5eac1ed372b227a27dd1ed9b6cfd1/visual-assets/Screenshot%202026-06-23%20111524.png)
+
+### User Feedback
+![Admin Panel/User Feedback](https://github.com/iillimitable/safe/blob/0266866448e5eac1ed372b227a27dd1ed9b6cfd1/visual-assets/Screenshot%202026-06-23%20111535.png)
+
+
+---
+
 ## 📜 License
 
 This project is licensed under the [MIT License](LICENSE).
-
----
 
 <div align="center">
 
