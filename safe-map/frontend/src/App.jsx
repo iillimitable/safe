@@ -15,6 +15,7 @@ import AdminRoute from './components/AdminRoute';
 import AdminPanel from './pages/Admin/AdminPanel';
 import AdminDashboard from './pages/Admin/Dashboard';
 import UserManagement from './pages/Admin/UserManagement';
+import UserDetail from './pages/Admin/UserDetail';
 import IncidentManagement from './pages/Admin/IncidentManagement';
 import ReportManagement from './pages/Admin/ReportManagement';
 import Feedback from './pages/Feedback';
@@ -53,6 +54,7 @@ function App() {
               <Route path="/admin" element={<AdminRoute><AdminPanel /></AdminRoute>}>
                 <Route index element={<AdminDashboard />} />
                 <Route path="users" element={<UserManagement />} />
+                <Route path="users/:id" element={<UserDetail />} />
                 <Route path="incidents" element={<IncidentManagement />} />
                 <Route path="reports" element={<ReportManagement />} />
                 <Route path="feedback" element={<FeedbackManagement />} />

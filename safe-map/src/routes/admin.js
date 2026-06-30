@@ -53,6 +53,33 @@ router.get('/users', async (req, res) => {
     }
 });
 
+// @route   GET api/admin/users/:id
+// @desc    Get a single user's full profile
+router.get('/users/:id', async (req, res) => {
+    try {
+        const user = await User.findById(req.params.id).select('-passwordHash');
+        if (!user) return res.status(404).json({ message: 'User not found' });
+        const reportsCount = await Report.countDocuments({ userId: user._id });
+        const incidentsCount = await Incident.countDocuments({ userId: user._id });
+
+        // Count submissions in the last 7 days for spam detection
+        const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
+        const recentReports = await Report.countDocuments({ userId: user._id, createdAt: { $gte: sevenDaysAgo } });
+        const recentIncidents = await Incident.countDocuments({ userId: user._id, createdAt: { $gte: sevenDaysAgo } });
+
+        res.json({
+            ...user.toObject(),
+            reportsCount,
+            incidentsCount,
+            recentReports,
+            recentIncidents
+        });
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).send('Server Error');
+    }
+});
+
 // @route   GET api/admin/users/:id/activity
 // @desc    Get user activity (reports and incidents)
 router.get('/users/:id/activity', async (req, res) => {

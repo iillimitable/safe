@@ -24,7 +24,7 @@ Key highlights:
 - 📊 Real-time **safety score calculation** based on community reports
 - 🗺️ **Incident mapping** with Leaflet interactive maps
 - 🔐 Secure **JWT authentication** with role-based access
-- 🛡️ Full **Admin moderation panel**
+- 🛡️ Full **Admin moderation panel** with user activity tracking & spam detection
 
 ---
 
@@ -47,7 +47,8 @@ Key highlights:
 | Feature | Description |
 |---|---|
 | **Admin Dashboard** | Overview of platform statistics |
-| **User Management** | View, promote, or delete users |
+| **User Management** | View all users; click any row to open their full activity detail page |
+| **User Activity Detail** | Full profile page per user — complete incident history, safety report history, 7-day spam/abuse detection alert, and quick Ban/Delete actions |
 | **Incident Management** | Review and moderate reported incidents |
 | **Report Management** | Manage area safety submissions |
 | **Feedback Management** | Review and respond to user feedback |
@@ -138,7 +139,8 @@ safe-map/
         │   └── Admin/
         │       ├── AdminPanel.jsx
         │       ├── Dashboard.jsx
-        │       ├── UserManagement.jsx
+        │       ├── UserManagement.jsx   # User list (click row → detail page)
+        │       ├── UserDetail.jsx       # Full user activity detail & moderation
         │       ├── IncidentManagement.jsx
         │       ├── ReportManagement.jsx
         │       └── FeedbackManagement.jsx
@@ -257,9 +259,11 @@ App is now running at → `http://localhost:5173`
 ### Admin (Protected)
 | Method | Endpoint | Description | Auth Required |
 |---|---|---|---|
-| `GET` | `/api/admin/users` | List all users | 🛡️ Admin |
-| `PUT` | `/api/admin/users/:id` | Update user role | 🛡️ Admin |
-| `DELETE` | `/api/admin/users/:id` | Delete a user | 🛡️ Admin |
+| `GET` | `/api/admin/users` | List all users with activity counts | 🛡️ Admin |
+| `GET` | `/api/admin/users/:id` | Get a single user's full profile + 7-day spam counts | 🛡️ Admin |
+| `GET` | `/api/admin/users/:id/activity` | Get a user's full incident & safety report history | 🛡️ Admin |
+| `PATCH` | `/api/admin/users/:id/ban` | Toggle ban status for a user | 🛡️ Admin |
+| `DELETE` | `/api/admin/users/:id` | Delete a user and all their data | 🛡️ Admin |
 | `GET` | `/api/admin/incidents` | List all incidents | 🛡️ Admin |
 | `DELETE` | `/api/admin/incidents/:id` | Delete an incident | 🛡️ Admin |
 | `GET` | `/api/admin/reports` | List all reports | 🛡️ Admin |
@@ -321,6 +325,22 @@ English, Hindi, Bengali, Gujarati, Kannada, Malayalam, Tamil, Telugu, Punjabi, O
 3. Make your changes and commit: `git commit -m "Add your feature"`
 4. Push to your fork: `git push origin feature/your-feature`
 5. Open a Pull Request
+
+---
+
+## 🆕 Changelog
+
+### v1.1.0 — Admin User Activity Detail
+
+- **New page**: `UserDetail.jsx` — a full-page admin view accessible by clicking any user row in the Users table.
+  - 👤 Complete user profile header (name, email, age, gender, join date, role & ban badges)
+  - 📊 Stats row — total incidents, total reports, activity counts for the last 7 days
+  - 🚨 **Spam / Abuse Detection Alert** — automatically highlighted when a user submits ≥ 5 incidents or ≥ 5 safety reports within 7 days
+  - 📋 Full **Incident Report History** — type, description, date/time of incident, location (city & state), submission timestamp
+  - 🛡️ Full **Safety Report History** — area name, color-coded safety score, comments, submission timestamp
+  - 🔧 Ban/Unban and Delete actions directly from the detail page
+- **Updated**: `UserManagement.jsx` — user rows are now clickable (navigate to detail page); the old modal popup has been replaced
+- **Updated**: `admin.js` — added `GET /api/admin/users/:id` endpoint with spam-detection counts
 
 ---
 
