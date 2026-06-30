@@ -269,7 +269,7 @@ Scores are averaged across all reports for an area and mapped to:
 
 ---
 
-## 🌍 Multilingual Support
+## 🌍 Multilingual Animation
 
 The welcome screen cycles through greetings in **15 languages**:
 
