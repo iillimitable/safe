@@ -20,11 +20,11 @@
 **Safe Map** is a full-stack web application that lets citizens report safety conditions in their area using a structured questionnaire. The data is aggregated and visualized as a **Safety Score** — helping people make informed decisions about where they live, work, or travel.
 
 Key highlights:
-- 🌐 **15 Indian languages** on the welcome screen
+- 🌐 Supports **15 Indian languages** on the welcome screen
 - 📊 Real-time **safety score calculation** based on community reports
 - 🗺️ **Incident mapping** with Leaflet interactive maps
 - 🔐 Secure **JWT authentication** with role-based access
-- 🛡️ Full **Admin moderation panel**
+- 🛡️ Full **Admin moderation panel** with user activity tracking & spam detection
 
 ---
 
@@ -47,7 +47,8 @@ Key highlights:
 | Feature | Description |
 |---|---|
 | **Admin Dashboard** | Overview of platform statistics |
-| **User Management** | View, promote, or delete users |
+| **User Management** | View all users; click any row to open their full activity detail page |
+| **User Activity Detail** | Full profile page per user — complete incident history, safety report history, 7-day spam/abuse detection alert, and quick Ban/Delete actions |
 | **Incident Management** | Review and moderate reported incidents |
 | **Report Management** | Manage area safety submissions |
 | **Feedback Management** | Review and respond to user feedback |
@@ -138,7 +139,8 @@ safe-map/
         │   └── Admin/
         │       ├── AdminPanel.jsx
         │       ├── Dashboard.jsx
-        │       ├── UserManagement.jsx
+        │       ├── UserManagement.jsx   # User list (click row → detail page)
+        │       ├── UserDetail.jsx       # Full user activity detail & moderation
         │       ├── IncidentManagement.jsx
         │       ├── ReportManagement.jsx
         │       └── FeedbackManagement.jsx
@@ -229,45 +231,6 @@ App is now running at → `http://localhost:5173`
 
 ---
 
-## 🌐 API Reference
-
-### Auth
-| Method | Endpoint | Description | Auth Required |
-|---|---|---|---|
-| `POST` | `/api/auth/register` | Register a new user | ❌ |
-| `POST` | `/api/auth/login` | Login and receive JWT token | ❌ |
-
-### Reports (Safety Questionnaire)
-| Method | Endpoint | Description | Auth Required |
-|---|---|---|---|
-| `POST` | `/api/reports` | Submit an area safety report | ✅ User |
-| `GET` | `/api/reports/search` | Search reports by `areaName` or `pincode` | ✅ User |
-
-### Incidents
-| Method | Endpoint | Description | Auth Required |
-|---|---|---|---|
-| `GET` | `/api/incidents` | Get all incidents | ✅ User |
-| `POST` | `/api/incidents` | Post a new incident | ✅ User |
-
-### Feedback
-| Method | Endpoint | Description | Auth Required |
-|---|---|---|---|
-| `POST` | `/api/feedback` | Submit platform feedback | ❌ |
-
-### Admin (Protected)
-| Method | Endpoint | Description | Auth Required |
-|---|---|---|---|
-| `GET` | `/api/admin/users` | List all users | 🛡️ Admin |
-| `PUT` | `/api/admin/users/:id` | Update user role | 🛡️ Admin |
-| `DELETE` | `/api/admin/users/:id` | Delete a user | 🛡️ Admin |
-| `GET` | `/api/admin/incidents` | List all incidents | 🛡️ Admin |
-| `DELETE` | `/api/admin/incidents/:id` | Delete an incident | 🛡️ Admin |
-| `GET` | `/api/admin/reports` | List all reports | 🛡️ Admin |
-| `DELETE` | `/api/admin/reports/:id` | Delete a report | 🛡️ Admin |
-| `GET` | `/api/admin/feedback` | List all feedback | 🛡️ Admin |
-
----
-
 ## 🔒 Authentication & Roles
 
 ```
@@ -306,6 +269,14 @@ Scores are averaged across all reports for an area and mapped to:
 
 ---
 
+## 🌍 Multilingual Support
+
+The welcome screen cycles through greetings in **15 languages**:
+
+English, Hindi, Bengali, Gujarati, Kannada, Malayalam, Tamil, Telugu, Punjabi, Odia, Urdu, Manipuri, Sindhi, Santali, and Namaste 🙏
+
+---
+
 ## 🤝 Contributing
 
 1. Fork the repository
@@ -313,8 +284,6 @@ Scores are averaged across all reports for an area and mapped to:
 3. Make your changes and commit: `git commit -m "Add your feature"`
 4. Push to your fork: `git push origin feature/your-feature`
 5. Open a Pull Request
-
----
 
 
 ## 📸 Visual Assets
@@ -344,6 +313,11 @@ Scores are averaged across all reports for an area and mapped to:
 
 ### Users
 ![Admin Panel/Users](https://github.com/iillimitable/safe/blob/0266866448e5eac1ed372b227a27dd1ed9b6cfd1/visual-assets/Screenshot%202026-06-23%20111438.png)
+
+### User (a)
+![Admin Panel/Users](https://github.com/iillimitable/safe/blob/4e0a31178d89c54c82637f76d7bcd8986e2a1d26/visual-assets/Screenshot%202026-06-30%20142110.png)
+![Admin Panel/Users](https://github.com/iillimitable/safe/blob/4e0a31178d89c54c82637f76d7bcd8986e2a1d26/visual-assets/Screenshot%202026-06-30%20142152.png)
+
 
 ### Incident's
 ![Admin Panel/Incident's](https://github.com/iillimitable/safe/blob/0266866448e5eac1ed372b227a27dd1ed9b6cfd1/visual-assets/Screenshot%202026-06-23%20111513.png)
