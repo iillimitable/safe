@@ -310,7 +310,7 @@ Scores are averaged across all reports for an area and mapped to:
 
 ---
 
-## 🌍 Multilingual Support
+## 🌍 Multilingual Animation
 
 The welcome screen cycles through greetings in **15 languages**:
 
@@ -328,21 +328,7 @@ English, Hindi, Bengali, Gujarati, Kannada, Malayalam, Tamil, Telugu, Punjabi, O
 
 ---
 
-## 🆕 Changelog
 
-### v1.1.0 — Admin User Activity Detail
-
-- **New page**: `UserDetail.jsx` — a full-page admin view accessible by clicking any user row in the Users table.
-  - 👤 Complete user profile header (name, email, age, gender, join date, role & ban badges)
-  - 📊 Stats row — total incidents, total reports, activity counts for the last 7 days
-  - 🚨 **Spam / Abuse Detection Alert** — automatically highlighted when a user submits ≥ 5 incidents or ≥ 5 safety reports within 7 days
-  - 📋 Full **Incident Report History** — type, description, date/time of incident, location (city & state), submission timestamp
-  - 🛡️ Full **Safety Report History** — area name, color-coded safety score, comments, submission timestamp
-  - 🔧 Ban/Unban and Delete actions directly from the detail page
-- **Updated**: `UserManagement.jsx` — user rows are now clickable (navigate to detail page); the old modal popup has been replaced
-- **Updated**: `admin.js` — added `GET /api/admin/users/:id` endpoint with spam-detection counts
-
----
 
 ## 📜 License
 
