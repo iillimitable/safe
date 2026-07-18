@@ -17,7 +17,7 @@
 
 ## 📖 About
 
-**Safe Map** is a full-stack web application that lets citizens report safety conditions in their area using a structured questionnaire. The data is aggregated and visualized as a **Safety Score** — helping people make informed decisions about where they live, work, or travel.
+**Safe Map** is a full-stack web application that lets citizens report safety conditions in their area using a structured questionnaire. The data is aggregated and visualized as a **Safety Score** In addition to the safety score, users can view reported crimes and suspicious activities for any location on the map. — helping people make informed decisions about where they live, work, or travel.
 
 Key highlights:
 - 🌐 Supports **15 Indian languages** on the welcome screen
