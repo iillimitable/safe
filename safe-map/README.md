@@ -20,11 +20,11 @@
 **Safe Map** is a full-stack web application that lets citizens report safety conditions in their area using a structured questionnaire. The data is aggregated and visualized as a **Safety Score** — helping people make informed decisions about where they live, work, or travel.
 
 Key highlights:
-- 🌐 Supports **15 Indian languages** on the welcome screen
 - 📊 Real-time **safety score calculation** based on community reports
 - 🗺️ **Incident mapping** with Leaflet interactive maps
 - 🔐 Secure **JWT authentication** with role-based access
 - 🛡️ Full **Admin moderation panel** with user activity tracking & spam detection
+- 🌐 **15 Indian languages** Animatiion on the welcome screen
 
 ---
 
