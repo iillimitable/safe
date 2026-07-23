@@ -17,7 +17,7 @@
 
 ## 📖 About
 
-***Safe Map is a full-stack, community-driven web application that collects crowd-sourced safety data from the public. Users can report the safety conditions of an area by answering a structured questionnaire, and the system aggregates all community responses to generate a Safety Score. In addition, users can view reported crimes and suspicious activities for any location on the map, helping them make informed decisions about where they live, work, or travel..
+**Safe Map** is a full-stack, community-driven web application that collects crowd-sourced safety data from the public. Users can report the safety conditions of an area by answering a structured questionnaire, and the system aggregates all community responses to generate a Safety Score. In addition, users can view reported crimes and suspicious activities for any location on the map, helping them make informed decisions about where they live, work, or travel.
 
 Key highlights:
 - 🌐 Supports **15 Indian languages** on the welcome screen
