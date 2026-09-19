@@ -328,6 +328,8 @@ English, Hindi, Bengali, Gujarati, Kannada, Malayalam, Tamil, Telugu, Punjabi, O
 ### User Feedback
 ![Admin Panel/User Feedback](https://github.com/iillimitable/safe/blob/0266866448e5eac1ed372b227a27dd1ed9b6cfd1/visual-assets/Screenshot%202026-06-23%20111535.png)
 
+### Architecture diagram 
+![architecture diagram](https://github.com/iillimitable/safe/blob/9c0ba4ea8771ba61fb2061f4b009d54bc2004c90/visual-assets/diagram.png)
 
 ---
 
